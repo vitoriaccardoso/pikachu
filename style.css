@@ -11,8 +11,16 @@ body{
     background-color: #f5cf06
 }
 
-header{
-    background-color: tomato;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Righteous', cursive;
+    color: #8e4106;
+}
+.logo__text{
+    font-size: 32px;
+    font-weight: 100;
 
 }
 main{
