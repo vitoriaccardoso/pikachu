@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Righteous', cursive;
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 50px ;
+    grid-template-rows: 100px 1fr 100px ;
     padding: 70px 70px 24px 70px;
     background-color: #f5cf06
 }
@@ -24,9 +25,67 @@ body{
 
 }
 main{
-    background-color: plum;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: #8e4106;
+
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+
+}
+
+.title__text{
+    color: #fff;
+    font-size: 350px;
+    font-size: 20vw;
+
+}
+.title__transparent{
+    position: absolute;
+    color: #fff5;
+    font-size: 27vw;
+    font-size: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: -1;
+}
+.info{
+    place-self: end start;
+}
+.info__title{
+    font-size: 64px;
+}
+.info__text{
+    font-size: 20px;
+    width: 500px;
+}
+.action{
+    background-color: #8e4106;
+    width: 400px;
+    height: 100px;
+    place-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none;
 }
 footer{
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #8e4106;
 
+}
+.pikachu-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
